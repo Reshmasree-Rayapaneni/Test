@@ -1,0 +1,16 @@
+name: Deploy to Stage
+
+on:
+  push:
+    branches:
+      - stage  # Runs when code is pushed to the stage branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run a test command
+        run: echo "GitHub Actions is working!"
