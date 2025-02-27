@@ -5,6 +5,7 @@ on:
     branches:
       - "main"
       - "stage"
+      - "dev"
       - "release/*"
 jobs:
   docker:
